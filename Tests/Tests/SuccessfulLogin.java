@@ -6,12 +6,8 @@ public class SuccessfulLogin {
 		/* @Author Alissa Taylor
 		 * @Summary The purpose of this is to successfully login to Facebook.
 		 * @Date 5/29/15
-<<<<<<< HEAD
 		 * Testing Testing 123
-=======
-		 *
 		 * Testing again 456
->>>>>>> origin/master
 		 */
 
 	}
