@@ -6,4 +6,4 @@
 
 * Brent Monger - [OrasiBrentM](https://github.com/OrasiBrentM)
 * Alissa Taylor - [alissataylor](https://github.com/alissataylor)
-* John Martin - [alissataylor](https://github.com/JohnMart)
+* John Martin - [John Martin](https://github.com/JohnMart)
