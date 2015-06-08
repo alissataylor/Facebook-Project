@@ -1,7 +1,6 @@
 package setup;
 
 import java.io.File;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -12,11 +11,16 @@ import java.util.Properties;
 import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
  
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -36,6 +40,8 @@ import org.testng.annotations.Parameters;
 *         
  */
 public class BaseClass {
+	
+
                 
                 private String browser;
                 private String getURL;
@@ -49,12 +55,14 @@ public class BaseClass {
     protected WebDriver driver; /*
                                                                 * Define a collection of WebDrivers and test
                                                                 * names inside a Map. This allows for more than
-                                                                * one driver to be used within a test class.
+                                                            * one driver to be used within a test class.
                                                                 * This also allows for a particular driver to
                                                                 * be tied to a specific test based on test
                                                                 * name.
                                                                 */
     protected Map<String, WebDriver> drivers = new HashMap<String, WebDriver>();
+    
+   
                 
                 
                 
@@ -91,20 +99,17 @@ public class BaseClass {
                                 this.strPassword = strPassword;
                 }
                 
-                public BaseClass() {
-                                //this.driver = driver;
-                                // TODO Auto-generated constructor stub
-                }
- 
+            	
                 private void setProperties(){
-                                browser = userCredentialRepo.getString("browser");
+                              
                                 getURL = userCredentialRepo.getString("URL");
                                 strUsername = userCredentialRepo.getString("Username");
                                 strPassword = userCredentialRepo.getString("Password");
-                }
+                }                
                 
                 public void Setup() {
                                 setProperties();
+                                File file = null;
                                 if (browser.equalsIgnoreCase("firefox")) { // Compares this String to
                                                 // another String, ignoring case considerations. Two
                                                 // strings are considered equal ignoring case if
@@ -120,8 +125,9 @@ public class BaseClass {
                                                 // strings are considered equal ignoring case if they are of the
                                                 // same length and corresponding characters in the two strings are
                                                 // equal ignoring case.
-                                                System.setProperty("webdriver.chrome.driver",
-                                                                                "C:\\Users\\andy.williams\\Desktop\\chromedriver.exe"); // Set
+                                	file = new File(this.getClass().getResource("/drivers/chromedriver.exe").getPath());
+                    				System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+                    							// Set
                                                 // to
                                                 // specified
                                                 // Browser
@@ -135,9 +141,9 @@ public class BaseClass {
                                                 // ignoring case if they are of the same length and
                                                 // corresponding characters in the two strings are equal ignoring
                                                 // case.
- 
-                                                System.setProperty("webdriver.ie.driver",
-                                                                                "C:\\Users\\andy.williams\\Desktop\\IEDriverServer.exe"); // Set
+                                				file = new File(this.getClass().getResource("/drivers/IEDriverServer.exe").getPath());
+                                				System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
+                                				// Set
                                                 // to
                                                 // specified
                                                 // Browser
@@ -158,8 +164,14 @@ public class BaseClass {
                                 driver.get(getURL); // Call desired parameter to initiate the URL
                                 // Selection
                                 driver.manage().window().maximize(); // Maximize WebDriver window
+                                
+                         
+                      
                 
                 }
+                
+             
+
                 
                   /**
      * Initializes the WebDriver, sets up the run location, driver type,
