@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="InternetExplorer"/>
+  <test name="TestFirefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.UserLogOut">
+        <methods>
+          <include name="UserLogOutTest" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.UserLogOut -->
+    </classes>
+  </test> <!-- TestFirefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

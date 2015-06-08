@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\andy.williams\git\Facebook-Project\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.UserLogOut" hash-for-method="UserLogOutTest(firefox)">UserLogOutTest(firefox)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.UserLogOut" hash-for-method="UserLogOutTest(chrome)">UserLogOutTest(chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.UserLogOut" hash-for-method="UserLogOutTest(InternetExplorer)">UserLogOutTest(InternetExplorer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.UserLogOut</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserLogOutTest(firefox)">
+                  </a> <!-- UserLogOutTest(firefox) -->
+                  <span class="method-name">UserLogOutTest</span>
+                  <span class="parameters">(firefox)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Norton Toolbar&quot;,&quot;description&quot;:&quot;Symantec Corporation&quot;,&quot;creator&quot;:&quot;Symantec Corporation&quot;,&quot;homepageURL&quot;:&quot;http://www.symantec.com&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:true,&quot;descriptor&quot;:&quot;C:\\ProgramData\\Norton\\{0C55C096-0F1D-4F28-AAA2-85EF591126E7}\\NIS_18.1.0.37\\coFFPlgn_2011_7_13_2&quot;,&quot;installDate&quot;:1433763530136,&quot;updateDate&quot;:1433763530136,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:879317,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:true,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;14.0&quot;,&quot;maxVersion&quot;:&quot;16.*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false}
+1433776650050	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1433776650050	addons.xpi-utils	DEBUG	Updating add-on states
+1433776650051	addons.xpi-utils	DEBUG	Writing add-ons list
+1433776650053	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1433776650054	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 7.4.0.9058
+1433776650113	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1433776650113	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1433776650113	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1433776650113	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1433776650113	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1433776650114	addons.manager	DEBUG	Starting provider: GMPProvider
+1433776650117	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1433776650118	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1433776650118	addons.manager	DEBUG	Starting provider: PluginProvider
+1433776650118	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1433776650119	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1433776650119	addons.manager	DEBUG	Completed startup sequence
+1433776652366	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1433776652367	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1433776652367	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1433776652632	DeferredSave.extensions.json	DEBUG	Starting timer
+1433776654814	DeferredSave.extensions.json	DEBUG	Starting write
+1433776654868	addons.manager	DEBUG	shutdown
+1433776654868	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1433776654868	addons.xpi	DEBUG	shutdown
+1433776654869	addons.xpi-utils	DEBUG	shutdown
+1433776654869	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1433776654870	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1433776654871	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1433776654871	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1433776655341	DeferredSave.extensions.json	DEBUG	Write succeeded
+1433776655341	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1433776655342	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1433776655347	addons.manager	DEBUG	Async provider shutdown done
+JavaScript error: resource://gre/modules/BookmarkHTMLUtils.jsm, line 897: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.removeFolderChildren]
+JavaScript error: resource://gre/modules/BookmarkHTMLUtils.jsm, line 897: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.removeFolderChildren]
+JavaScript error: jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/omni.ja!/components/nsBrowserGlue.js, line 1890: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIAnnotationService.getItemsWithAnnotation]
+
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;GSOD-NBRYANT&apos;, ip: &apos;10.238.242.250&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_40&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at setup.BaseClass.Setup(BaseClass.java:118)
+	at tests.UserLogOut.UserLogOutTest(UserLogOut.java:25)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.WebDriverException: java.lang.InterruptedException: Process timed out after waiting for 45000 ms.
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;GSOD-NBRYANT&apos;, ip: &apos;10.238.242.250&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_40&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:131)
+	at org.openqa.selenium.firefox.FirefoxBinary.waitFor(FirefoxBinary.java:222)
+	at org.openqa.selenium.firefox.FirefoxBinary.clean(FirefoxBinary.java:242)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:91)
+	... 28 more
+Caused by: java.lang.InterruptedException: Process timed out after waiting for 45000 ms.
+	at org.openqa.selenium.os.UnixProcess.waitFor(UnixProcess.java:148)
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:129)
+	... 31 more
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.UserLogOut</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserLogOutTest(chrome)">
+                  </a> <!-- UserLogOutTest(chrome) -->
+                  <span class="method-name">UserLogOutTest</span>
+                  <span class="parameters">(chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserLogOutTest(InternetExplorer)">
+                  </a> <!-- UserLogOutTest(InternetExplorer) -->
+                  <span class="method-name">UserLogOutTest</span>
+                  <span class="parameters">(InternetExplorer)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\andy.williams\git\Facebook-Project\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;TestFirefox&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.UserLogOut&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestFirefox --&gt;
+  &lt;test name=&quot;TestChrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.UserLogOut&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestChrome --&gt;
+  &lt;test name=&quot;TestIE&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;InternetExplorer&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.UserLogOut&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestIE --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestFirefox (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestChrome (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestIE (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'UserLogOutTest')
+data.setCell(0, 2, 'tests.UserLogOut')
+data.setCell(0, 3, 60005);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'UserLogOutTest')
+data.setCell(1, 2, 'tests.UserLogOut')
+data.setCell(1, 3, 51147);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'UserLogOutTest')
+data.setCell(2, 2, 'tests.UserLogOut')
+data.setCell(2, 3, 45504);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">UserLogOutTest(chrome)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">User alissa.taylor@orasi.com successfully logged out.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">UserLogOutTest(InternetExplorer)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">User alissa.taylor@orasi.com successfully logged out.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UserLogOut</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">UserLogOutTest(InternetExplorer)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UserLogOutTest(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UserLogOutTest(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser([TestResult name=UserLogOutTest status=SUCCESS method=UserLogOut.UserLogOutTest(java.lang.String)[pr...)</span>
+                <span class="method-start">46607 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">closeBrowser([TestResult name=UserLogOutTest status=FAILURE method=UserLogOut.UserLogOutTest(java.lang.String)[pr...)</span>
+                <span class="method-start">51228 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser([TestResult name=UserLogOutTest status=SUCCESS method=UserLogOut.UserLogOutTest(java.lang.String)[pr...)</span>
+                <span class="method-start">60007 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

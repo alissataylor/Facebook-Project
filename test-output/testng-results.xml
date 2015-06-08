@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[User alissa.taylor@orasi.com successfully logged out.]]>
+    </line>
+    <line>
+      <![CDATA[User alissa.taylor@orasi.com successfully logged out.]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="61177" started-at="2015-06-08T15:17:11Z" finished-at="2015-06-08T15:18:12Z">
+    <groups>
+    </groups>
+    <test name="TestChrome" duration-ms="47806" started-at="2015-06-08T15:17:11Z" finished-at="2015-06-08T15:17:58Z">
+      <class name="tests.UserLogOut">
+        <test-method status="PASS" signature="UserLogOutTest(java.lang.String)[pri:0, instance:tests.UserLogOut@68be2bc2]" name="UserLogOutTest" duration-ms="45504" started-at="2015-06-08T11:17:11Z" finished-at="2015-06-08T11:17:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[User alissa.taylor@orasi.com successfully logged out.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- UserLogOutTest -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:tests.UserLogOut@68be2bc2]" name="closeBrowser" is-config="true" duration-ms="1127" started-at="2015-06-08T11:17:57Z" finished-at="2015-06-08T11:17:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserLogOutTest status=SUCCESS method=UserLogOut.UserLogOutTest(java.lang.String)[pri:0, instance:tests.UserLogOut@68be2bc2] output=User alissa.taylor@orasi.com successfully logged out.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.UserLogOut -->
+    </test> <!-- TestChrome -->
+    <test name="TestFirefox" duration-ms="51305" started-at="2015-06-08T15:17:11Z" finished-at="2015-06-08T15:18:02Z">
+      <class name="tests.UserLogOut">
+        <test-method status="FAIL" signature="UserLogOutTest(java.lang.String)[pri:0, instance:tests.UserLogOut@6d8a00e3]" name="UserLogOutTest" duration-ms="51147" started-at="2015-06-08T11:17:11Z" finished-at="2015-06-08T11:18:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+,"icon64URL":null,"defaultLocale":{"name":"Norton Toolbar","description":"Symantec Corporation","creator":"Symantec Corporation","homepageURL":"http://www.symantec.com"},"visible":true,"active":false,"userDisabled":true,"appDisabled":true,"descriptor":"C:\\ProgramData\\Norton\\{0C55C096-0F1D-4F28-AAA2-85EF591126E7}\\NIS_18.1.0.37\\coFFPlgn_2011_7_13_2","installDate":1433763530136,"updateDate":1433763530136,"applyBackgroundUpdates":1,"bootstrap":false,"size":879317,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":true,"hasBinaryComponents":true,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"14.0","maxVersion":"16.*"}],"targetPlatforms":[],"multiprocessCompatible":false}
+1433776650050	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1433776650050	addons.xpi-utils	DEBUG	Updating add-on states
+1433776650051	addons.xpi-utils	DEBUG	Writing add-ons list
+1433776650053	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1433776650054	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 7.4.0.9058
+1433776650113	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1433776650113	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1433776650113	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1433776650113	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1433776650113	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1433776650114	addons.manager	DEBUG	Starting provider: GMPProvider
+1433776650117	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1433776650118	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1433776650118	addons.manager	DEBUG	Starting provider: PluginProvider
+1433776650118	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1433776650119	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1433776650119	addons.manager	DEBUG	Completed startup sequence
+1433776652366	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1433776652367	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1433776652367	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1433776652632	DeferredSave.extensions.json	DEBUG	Starting timer
+1433776654814	DeferredSave.extensions.json	DEBUG	Starting write
+1433776654868	addons.manager	DEBUG	shutdown
+1433776654868	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1433776654868	addons.xpi	DEBUG	shutdown
+1433776654869	addons.xpi-utils	DEBUG	shutdown
+1433776654869	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1433776654870	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1433776654871	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1433776654871	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1433776655341	DeferredSave.extensions.json	DEBUG	Write succeeded
+1433776655341	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1433776655342	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1433776655347	addons.manager	DEBUG	Async provider shutdown done
+JavaScript error: resource://gre/modules/BookmarkHTMLUtils.jsm, line 897: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.removeFolderChildren]
+JavaScript error: resource://gre/modules/BookmarkHTMLUtils.jsm, line 897: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.removeFolderChildren]
+JavaScript error: jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/omni.ja!/components/nsBrowserGlue.js, line 1890: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIAnnotationService.getItemsWithAnnotation]
+
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'GSOD-NBRYANT', ip: '10.238.242.250', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+,"icon64URL":null,"defaultLocale":{"name":"Norton Toolbar","description":"Symantec Corporation","creator":"Symantec Corporation","homepageURL":"http://www.symantec.com"},"visible":true,"active":false,"userDisabled":true,"appDisabled":true,"descriptor":"C:\\ProgramData\\Norton\\{0C55C096-0F1D-4F28-AAA2-85EF591126E7}\\NIS_18.1.0.37\\coFFPlgn_2011_7_13_2","installDate":1433763530136,"updateDate":1433763530136,"applyBackgroundUpdates":1,"bootstrap":false,"size":879317,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":true,"hasBinaryComponents":true,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"14.0","maxVersion":"16.*"}],"targetPlatforms":[],"multiprocessCompatible":false}
+1433776650050	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1433776650050	addons.xpi-utils	DEBUG	Updating add-on states
+1433776650051	addons.xpi-utils	DEBUG	Writing add-ons list
+1433776650053	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1433776650054	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 7.4.0.9058
+1433776650113	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1433776650113	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1433776650113	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1433776650113	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1433776650113	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1433776650114	addons.manager	DEBUG	Starting provider: GMPProvider
+1433776650117	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1433776650118	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1433776650118	addons.manager	DEBUG	Starting provider: PluginProvider
+1433776650118	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1433776650119	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1433776650119	addons.manager	DEBUG	Completed startup sequence
+1433776652366	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1433776652367	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1433776652367	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1433776652632	DeferredSave.extensions.json	DEBUG	Starting timer
+1433776654814	DeferredSave.extensions.json	DEBUG	Starting write
+1433776654868	addons.manager	DEBUG	shutdown
+1433776654868	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1433776654868	addons.xpi	DEBUG	shutdown
+1433776654869	addons.xpi-utils	DEBUG	shutdown
+1433776654869	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1433776654870	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1433776654871	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1433776654871	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1433776655341	DeferredSave.extensions.json	DEBUG	Write succeeded
+1433776655341	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1433776655342	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1433776655347	addons.manager	DEBUG	Async provider shutdown done
+JavaScript error: resource://gre/modules/BookmarkHTMLUtils.jsm, line 897: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.removeFolderChildren]
+JavaScript error: resource://gre/modules/BookmarkHTMLUtils.jsm, line 897: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.removeFolderChildren]
+JavaScript error: jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/omni.ja!/components/nsBrowserGlue.js, line 1890: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIAnnotationService.getItemsWithAnnotation]
+
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'GSOD-NBRYANT', ip: '10.238.242.250', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:134)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at setup.BaseClass.Setup(BaseClass.java:118)
+	at tests.UserLogOut.UserLogOutTest(UserLogOut.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.WebDriverException: java.lang.InterruptedException: Process timed out after waiting for 45000 ms.
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'GSOD-NBRYANT', ip: '10.238.242.250', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_40'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:131)
+	at org.openqa.selenium.firefox.FirefoxBinary.waitFor(FirefoxBinary.java:222)
+	at org.openqa.selenium.firefox.FirefoxBinary.clean(FirefoxBinary.java:242)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:91)
+	... 28 more
+Caused by: java.lang.InterruptedException: Process timed out after waiting for 45000 ms.
+	at org.openqa.selenium.os.UnixProcess.waitFor(UnixProcess.java:148)
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:129)
+	... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserLogOutTest -->
+        <test-method status="FAIL" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:tests.UserLogOut@6d8a00e3]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2015-06-08T11:18:02Z" finished-at="2015-06-08T11:18:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserLogOutTest status=FAILURE method=UserLogOut.UserLogOutTest(java.lang.String)[pri:0, instance:tests.UserLogOut@6d8a00e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at tests.UserLogOut.closeBrowser(UserLogOut.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.UserLogOut -->
+    </test> <!-- TestFirefox -->
+    <test name="TestIE" duration-ms="61177" started-at="2015-06-08T15:17:11Z" finished-at="2015-06-08T15:18:12Z">
+      <class name="tests.UserLogOut">
+        <test-method status="PASS" signature="UserLogOutTest(java.lang.String)[pri:0, instance:tests.UserLogOut@7823a2f9]" name="UserLogOutTest" duration-ms="60005" started-at="2015-06-08T11:17:11Z" finished-at="2015-06-08T11:18:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InternetExplorer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[User alissa.taylor@orasi.com successfully logged out.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- UserLogOutTest -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:tests.UserLogOut@7823a2f9]" name="closeBrowser" is-config="true" duration-ms="1099" started-at="2015-06-08T11:18:11Z" finished-at="2015-06-08T11:18:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserLogOutTest status=SUCCESS method=UserLogOut.UserLogOutTest(java.lang.String)[pri:0, instance:tests.UserLogOut@7823a2f9] output=User alissa.taylor@orasi.com successfully logged out.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.UserLogOut -->
+    </test> <!-- TestIE -->
+  </suite> <!-- Suite -->
+</testng-results>
