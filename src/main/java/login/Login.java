@@ -5,9 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import setup.BaseClass;
+
 public class Login {
 
-	WebDriver driver;
+	private BaseClass base = null;
 
 	// Setup Object Repository
 
@@ -20,23 +22,25 @@ public class Login {
 	@FindBy(id = "u_0_n")
 	WebElement btnLogin;
 
-	public Login(WebDriver driver) {
+	public Login(BaseClass base) {
 
-		this.driver = driver;
+		this.base = base;
 
 		// This initElements method will create all WebElements
 
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(base.getDriver(), this);
 	}
+	
+	
 
 	// Setup page functions
 // random comment
 	
 	public void LoginFunction() {
 
-		txtLoginEmail.sendKeys("alissa.taylor@orasi.com");
+		txtLoginEmail.sendKeys(base.getUsername());
 		
-		txtPassword.sendKeys("Orasi2");
+		txtPassword.sendKeys(base.getPassword());
 		
 		btnLogin.click();
 	}
